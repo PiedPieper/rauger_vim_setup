@@ -9,6 +9,9 @@ set shell=/bin/bash\ --rcfile\ ~/.bash_profile\ -i
 set wildmode=longest,list,full
 set wildmenu
 
+filetype plugin on
+
+let mapleader="g"
 
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>

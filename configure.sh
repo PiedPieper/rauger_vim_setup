@@ -24,13 +24,13 @@ if [ ! -d .vim/bundle/nerdcommenter ]
 then
     cp -r nerdcommenter .vim/bundle
 fi 
- 
+
+
 ## Create the symlinks
 if [ ! -L ~/.vim ] 
 then
     ln -s $PWD/.vim ~/.vim
 fi
-
 if [ ! -L ~/.vimrc ] 
 then
     ln -s $PWD/.vimrc ~/.vimrc
