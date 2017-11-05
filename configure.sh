@@ -27,12 +27,19 @@ fi
 
 
 ## Create the symlinks
-if [ ! -L ~/.vim ] 
+if [ 
+if [ ! -L ~/.vim && ! -f ~/.vim ] 
 then
     ln -s $PWD/.vim ~/.vim
+else 
+    rm -rf ~/.vim
+    ln -s $PWD/.vim ~/.vim
 fi
-if [ ! -L ~/.vimrc ] 
+if [ ! -L ~/.vimrc && ! -f ~/.vimrc ] 
 then
+    ln -s $PWD/.vimrc ~/.vimrc
+else 
+    rm -rf ~/.vimrc
     ln -s $PWD/.vimrc ~/.vimrc
 fi
 
