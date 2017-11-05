@@ -49,6 +49,20 @@ else
     rm -rf ~/.vimrc
     ln -s $PWD/.vimrc ~/.vimrc
 fi
-
+if [ ! -L ~/.tmux.conf ] && [ ! -f ~/.tmux.conf ]
+then
+    ln -s $PWD/.tmux.conf ~/.tmux.conf
+else 
+    rm -rf ~/.tmux.conf
+    ln -s $PWD/.tmux.conf ~/.tmux.conf
+fi
+if [ ! -L ~/.bash_profile ] && [ ! -f ~/.bash_profile ]
+then
+    ln -s $PWD/.bash_profile  ~/.bash_profile
+else 
+    rm -rf ~/.bash_profile 
+    ln -s $PWD/.bash_profile ~/.bash_profile
+fi 
+    
 echo "Done"
 
