@@ -7,6 +7,21 @@ echo "Loading Submodules"
 git submodule init
 git submodule update
 
+## Install Vim if you want to 
+echo "Would you like to re-install vim? (y/n)"
+read input
+path_to_vim=$(which vim)
+if [ -x "$path_to_executable" ] || [ $input == "y" ]
+then
+    echo "Installing Vim"
+    cd vim/ 
+    ./configure --enable-pythoninterp --prefix=/usr
+    make
+    sudo make install
+    cd ..
+fi
+
+
 ## Set up pathogen
 if [ ! -d .vim/autoload ]
 then
