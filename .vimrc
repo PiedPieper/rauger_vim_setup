@@ -1,5 +1,7 @@
 execute pathogen#infect()
 syntax enable
+set backspace=2
+set hlsearch
 set expandtab
 set tabstop=4
 set runtimepath+=~/.vim_runtime

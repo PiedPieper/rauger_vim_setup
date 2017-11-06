@@ -8,16 +8,17 @@ git submodule init
 git submodule update
 
 ## Install Vim if you want to 
-echo "Would you like to re-install vim? (y/n)"
+echo "Would you like to install vim? (y/n)"
 read input
 path_to_vim=$(which vim)
-if [ -x "$path_to_executable" ] || [ $input == "y" ]
+if [ -x "$path_to_vim" ] && [ $input == "y" ]
 then
     echo "Installing Vim"
     cd vim/ 
     ./configure --enable-pythoninterp --prefix=/usr
     make
     sudo make install
+    sudo cp runtime/rgb.txt $VIMRUNTIME
     cd ..
 fi
 
