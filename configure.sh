@@ -50,6 +50,9 @@ fi
 
 
 ## Create the symlinks
+echo "Deleting Current ~/.vim"
+rm -rf ~/.vim*
+
 echo "Creating SymLinks"
 if [ ! -L ~/.vim ] && [ ! -f ~/.vim ] 
 then
