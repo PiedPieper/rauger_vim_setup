@@ -35,7 +35,7 @@ fi
 if [ ! -d .vim/bundle/syntastic ]
 then
     echo "Installing Syntastic"       
-    cp -r syntastic .vim/bundle
+    cp -r syntastic/ .vim/bundle/
 fi 
 if [ ! -d .vim/bundle/vim-tmux-navigator ]
 then
