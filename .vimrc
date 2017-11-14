@@ -1,13 +1,13 @@
 execute pathogen#infect()
+
 syntax enable
+set autoindent
 set backspace=2
 set hlsearch
 set expandtab
 set tabstop=4
-set runtimepath+=~/.vim_runtime
 set number
 set virtualedit=all
-set shell=/bin/bash\ --rcfile\ ~/.bash_profile\ -i
 set wildmode=longest,list,full
 set wildmenu
 
