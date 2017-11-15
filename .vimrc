@@ -4,8 +4,8 @@ syntax enable
 set autoindent
 set backspace=2
 set hlsearch
-set expandtab
-set tabstop=4
+"set expandtab
+"set tabstop=4
 set number
 set virtualedit=all
 set wildmode=longest,list,full
