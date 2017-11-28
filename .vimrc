@@ -11,6 +11,7 @@ set shiftwidth=4
 set expandtab
 
 
+xnoremap p pgvy
 
 set number
 set virtualedit=all
