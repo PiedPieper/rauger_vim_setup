@@ -32,10 +32,17 @@ fi
 
 
 ## Put the submodules into the bundle
+if [ ! -d .vim/bundle/vim-erlang-tags ]
+then
+    echo "Installing Vim-Erlang-Tags"       
+	mkdir .vim/bundle/vim-erlang-tags
+    cp -r vim-erlang-tags/* .vim/bundle/vim-erlang-tags/
+fi 
 if [ ! -d .vim/bundle/syntastic ]
 then
     echo "Installing Syntastic"       
-    cp -r syntastic/ .vim/bundle/
+	mkdir .vim/bundle/syntastic
+    cp -r syntastic/* .vim/bundle/syntastic/
 fi 
 if [ ! -d .vim/bundle/vim-tmux-navigator ]
 then

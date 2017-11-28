@@ -13,3 +13,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/vim/vim.git
+[submodule "vim-erlang-tags"]
+	path = vim-erlang-tags
+	url = https://github.com/vim-erlang/vim-erlang-tags.git
