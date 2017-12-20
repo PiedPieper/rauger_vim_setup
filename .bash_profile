@@ -13,3 +13,5 @@ alias box152='ssh rauger@192.168.7.152'
 alias piwork='ssh pi@192.168.7.98'
 alias QR='scp ryan@192.168.7.82:~/repos/QR/* ~/repos/QR/'
 
+
+alias Own='sudo chown -R rauger .'
