@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/ryanauger/repos'
 let g:netrw_dirhist_2='/Users/ryanauger/.vim'
@@ -6,3 +7,7 @@ let g:netrw_dirhist_3='/Users/ryanauger/Desktop'
 let g:netrw_dirhist_4='/private/var/root/.vim'
 let g:netrw_dirhist_5='/home/rauger/repos/fota_server/.git'
 let g:netrw_dirhist_6='/home/rauger/repos/cassandra'
+=======
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/rauger/repos/source_code/ryanvim'
+>>>>>>> 4f51ecc66766e12c88b82b6ec5391d7b44662b8a
