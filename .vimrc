@@ -34,3 +34,5 @@ let g:syntastic_auto_loc_list = 1
 
 command! -nargs=0 Sw w !sudo tee % > /dev/null
 
+set runtimepath^=~/.vim/bundle/vim-erlang-runtime/
+
